@@ -21,7 +21,7 @@ a {
 .navbar {
     width: 100%;
     height: 5rem;
-    background: orange;
+    background: #FB8F5D;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,7 @@ a {
 .nav-right {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 li.nav-link {
@@ -108,7 +109,7 @@ li.nav-link:hover {
 
 .banner-title span {
     text-transform: uppercase;
-    color: orange;
+    color: #FB8F5D;
 }
 
 .banner p {
