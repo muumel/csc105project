@@ -20,12 +20,16 @@ a {
 /* nav bar */
 .navbar {
     width: 100%;
-    height: 5rem;
+    height: 4.5rem;
     background: #FB8F5D;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
+    position: fixed;
+    z-index:1;
+    
+
 }
 
 .navwrap .nav-logo a {
@@ -94,28 +98,39 @@ li.nav-link:hover {
 /* banner */
 .banner {
     flex: 1;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/banner-bg.jpeg) center/cover no-repeat fixed;
     color: white;
+
+}
+
+.profile {
+    width: 2rem;
+    height: 2rem;
+
 }
 
 .banner-title {
     font-size: 3.2rem;
+
 }
 
 .banner-title span {
     text-transform: uppercase;
     color: #FB8F5D;
+    
+
 }
 
 .banner p {
     padding: 1rem 0 2rem 0;
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .banner form {
@@ -144,3 +159,117 @@ li.nav-link:hover {
 }
 
 /* banner */
+
+
+/* catagories */
+.catagories-title{
+    text-align: center;
+    color: #FB8F5D;
+    font-size: 1.25em;
+}
+.catagories{
+   
+    padding: 3rem 3rem 7rem 3rem;
+}
+.catagowrapper{
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.travel-image{
+    position: relative;
+    height: 30rem;
+    width: 33rem;
+    
+}
+
+
+.restaurant-image{
+    position: relative;
+    height: 30rem;
+    width: 33rem;
+}
+
+
+#img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    backdrop-filter: blur(0.2rem);
+}
+
+#img-overlay>*{
+    transform: translateY(3rem);
+    transition: transform 0.25s;
+}
+
+#img-overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.25s ease-in-out;
+}
+#img-overlay:hover>*{
+    transform: translateY(0);
+    
+}
+/* catagories */
+
+.rank{
+    padding: 4rem;
+    background-image: linear-gradient(180deg, transparent, #fff192, #fdbb9d);
+    
+}
+
+.rank-rests{
+    padding-top: 4rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.place-title{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
+.rest-title{
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+.details{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.card{
+    width: 30%;
+    margin-bottom:3rem;
+    border-radius: 3rem;
+    background-color: antiquewhite;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+.img-con{
+    
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%, 0 0);
+}
+.img-con>img{
+    width: 100%;
+    display: block;
+    border-radius: 3rem 3rem 0 0;
+}
